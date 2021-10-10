@@ -6,7 +6,7 @@ var red = function red () {
 
 const blue = function blue(f){ // 
   let y = f(); // call function red
-  return y; return value return from function red
+  return y; //return value return from function red
 }
 
 var x = blue(red); //passing red fuction as reference
