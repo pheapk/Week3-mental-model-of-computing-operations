@@ -13,7 +13,7 @@
 
     function getRandom(step) {
       // return value between +step and -step
-      return Math.random() * 2 * step - step;
+      return Math.random() * 2 * step - step; // minus to plus -5 , + 5
     }
     function update() {
       // the wind speed is added to x direction
@@ -46,5 +46,13 @@
         stroke-width="5"
       />
     </svg>
+    <p>
+      In the Console, type factory(10) to create ten balls. Type update(); to make them move. 
+      The balls move at random direction from the starting point. 
+
+    </p>
+    <p>You can change the wind's speed by changing "speed" variable;
+      Wind blows from left to right;
+    </p>
   </div>
 </body>
