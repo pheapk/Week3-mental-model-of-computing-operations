@@ -2,6 +2,7 @@
 <body>
   <script src="ball.js"></script>
   <script>
+    // 
     const size = 30; // size of ball
     const x = []; // position
     const y = [];
@@ -19,10 +20,11 @@
       }
     }
 
+    // activate the ball so it moves
     function update() {
       for (let i = 0; i < balls.length; i++) {
         x[i] += velocity_x[i];
-        velocity_y[i] += gravity;
+        velocity_y[i] += gravity; // change gravity to add affect
         y[i] += velocity_y[i];
         checkWalls(i);
 
@@ -34,6 +36,8 @@
     function getRandom(scale) {
       return Math.random() * scale;
     }
+
+    // use to create new balls based on total
     function factory(total) {
       // check how make balls exist already and add to the array
       let n = balls.length;
@@ -56,5 +60,10 @@
         stroke-width="5"
       />
     </svg>
+
+    <p>
+      In the Console, type factory(10); to create ten balls. Type update(); to make balls move.  
+
+    </p>
   </div>
 </body>
